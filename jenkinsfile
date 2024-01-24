@@ -17,17 +17,16 @@ pipeline {
             }
         }
     }
-}
 
-post {
-    always {
-        echo 'I will always run wheather the job is successful or not'
-    }.
-    success{
-        echo 'I will always run only when the job is successful'
-    }.
-    failure{
-        echo 'I will run when failed'
+    post {
+         always {
+            echo 'I will always run wheather the job is successful or not'
+         }.
+        success{
+            echo 'I will always run only when the job is successful'
+        }.
+        failure{
+            echo 'I will run when failed'
+        }
     }
-
 }
