@@ -4,6 +4,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'building...'
+                sh '''
+                ls -ltr
+                pwd
+                echo 'this is ssap'
+                '''
             }
         }
         stage('Test') {
